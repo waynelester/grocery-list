@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { GroceryInputComponent } from './grocery-input/grocery-input.component';
+import { GroceryListItemsComponent } from './grocery-list-items/grocery-list-items.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GroceryInputComponent,
+    GroceryListItemsComponent
   ],
   imports: [
     BrowserModule
