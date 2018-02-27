@@ -13,11 +13,11 @@ addGrocery(groceryToAdd){
   this.groceries.push(groceryToAdd);
  
 }
-//   deleteGrocery(groceryToDelete) {
+  deleteGrocery(groceryToDelete) {
 
-//     this.groceries.splice(this.groceries.indexOf(groceryToDelete), 1);
+    this.groceries.splice(this.groceries.indexOf(groceryToDelete), 1);
 
-//   }
+  }
   constructor() { 
       console.log(mockList);
   }

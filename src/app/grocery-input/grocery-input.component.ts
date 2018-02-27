@@ -15,7 +15,9 @@ onAddGrocery(grocery){
     this._grocerylist.addGrocery(this.currentGrocery);
     this.currentGrocery = "";
 }
-// deleteGrocery = this._grocerylist.deleteGrocery();
+deleteGrocery(grocery){
+   this._grocerylist.deleteGrocery(this.currentGrocery);
+}
   ngOnInit() {
    
   }
