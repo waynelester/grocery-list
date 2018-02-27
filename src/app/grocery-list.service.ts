@@ -3,9 +3,12 @@ import { mockList } from './mock-list';
 
 @Injectable()
 export class GroceryListService {
+    name: string = "Wayne";
    getItem() {
        return mockList;
    }
-  constructor() { }
+  constructor() { 
+      console.log(mockList);
+  }
 
 }

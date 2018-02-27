@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { GroceryInputComponent } from './grocery-input/grocery-input.component';
 import { GroceryListItemsComponent } from './grocery-list-items/grocery-list-items.component';
+import { GroceryListService } from './grocery-list.service';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { GroceryListItemsComponent } from './grocery-list-items/grocery-list-ite
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [GroceryListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
