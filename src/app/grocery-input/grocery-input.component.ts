@@ -8,8 +8,10 @@ import { NgModel } from '@angular/forms';
 })
 export class GroceryInputComponent implements OnInit {
 
-  constructor() { }
-//input grocery items here
+ // constructor(private _grocerylist: GroceryListService) { }
+constructor() { }
+addGrocery = this._grocerylist.addGrocery();
+deleteGrocery = this._grocerylist.deleteGrocery();
   ngOnInit() {
   }
 

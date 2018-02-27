@@ -3,10 +3,11 @@
   <h1>
     {{title}}!
   </h1>
-       <input [(ngModel)]="grocery.name" placeholder="grocery item">
+       <input [(ngModel)]="grocery.name" placeholder="grocery item"><button (click)="addGrocery">Add Item</button>
 </div>
 <div>
   <app-grocery-list-items></app-grocery-list-items>
+ <!-- <app-grocery-input></app-grocery-input> !-->
 </div>
 
 

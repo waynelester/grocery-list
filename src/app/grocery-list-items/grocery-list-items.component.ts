@@ -9,7 +9,7 @@ import { GroceryListService } from '../grocery-list.service';
 export class GroceryListItemsComponent implements OnInit {
 
   constructor(private _grocerylist: GroceryListService) { }
-
+//groceries = this._grocerylist.getItem();
   ngOnInit() {
     console.log(this._grocerylist)
   }
