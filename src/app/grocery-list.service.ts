@@ -4,9 +4,7 @@ import { mockList } from './mock-list';
 @Injectable()
 export class GroceryListService {
     groceries: string[] = ["bananas", "cucumbers", "strawberries"];
-//   getItem() {
-//       return mockList;
-//   }
+currentGrocery: string;
 
 addGrocery(groceryToAdd){
     console.log(groceryToAdd, "From Grocery List Service");
@@ -18,8 +16,6 @@ addGrocery(groceryToAdd){
     this.groceries.splice(this.groceries.indexOf(groceryToDelete), 1);
 
   }
-  constructor() { 
-      console.log(mockList);
-  }
+  constructor() { }
 
 }

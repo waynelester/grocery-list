@@ -1,8 +1,7 @@
 <p>Items:</p>
 <ul class="items">
-<li *ngFor="let item of _grocerylist.groceries"
-(click)="onAddGrocery(item)"
->
+<li *ngFor="let item of _grocerylist.groceries">
 {{item}}
+<button (click)="deleteGrocery(item)">Delete Item</button>
     </li>
     </ul>

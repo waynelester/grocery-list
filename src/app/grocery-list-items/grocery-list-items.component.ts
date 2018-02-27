@@ -10,9 +10,12 @@ export class GroceryListItemsComponent implements OnInit {
   currentGrocery: string;
   constructor(public _grocerylist: GroceryListService) {
   
- 
+
     this.currentGrocery = _grocerylist.currentGrocery
 }
+ deleteGrocery(currentGrocery) {
+   this._grocerylist.deleteGrocery(currentGrocery);
+ }
  ngOnInit() {
   
   }
