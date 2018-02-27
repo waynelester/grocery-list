@@ -1,12 +1,3 @@
-<!--<div *ngIf="items">!--> 
 
-  <div><span>Item: </span>{{item.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="grocery.name" placeholder="name"/><button (click)="addGrocery">Add Item</button>
-    </label>
-  </div>
-<li>
-    
-</li>
-<!--</div>!-->
+       <input [(ngModel)]="currentGrocery" placeholder="grocery item"><button (click)="onAddGrocery(currentGrocery)">Add Item</button>
+

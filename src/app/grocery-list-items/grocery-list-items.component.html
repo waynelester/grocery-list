@@ -1,6 +1,8 @@
 <p>Items:</p>
 <ul class="items">
-<li *ngFor="let item of _grocerylist.groceries">
+<li *ngFor="let item of _grocerylist.groceries"
+(click)="onAddGrocery(item)"
+>
 {{item}}
     </li>
     </ul>

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { GroceryListService } from './grocery-list.service';
+//import { GroceryInputComponent } from '/grocery-input/grocery-input'
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent{
   title = 'Grocery List';
-  grocery = {
-    name: [];
-  }
+  groceryName: groceries[];
 }

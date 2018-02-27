@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgModel } from '@angular/forms';
+import { GroceryListService } from '../grocery-list.service';
 
 @Component({
   selector: 'app-grocery-input',
@@ -7,12 +8,16 @@ import { NgModel } from '@angular/forms';
   styleUrls: ['./grocery-input.component.css']
 })
 export class GroceryInputComponent implements OnInit {
+currentGrocery: string;
+  constructor(public _grocerylist: GroceryListService) { }
 
- // constructor(private _grocerylist: GroceryListService) { }
-constructor() { }
-addGrocery = this._grocerylist.addGrocery();
-deleteGrocery = this._grocerylist.deleteGrocery();
+onAddGrocery(grocery){
+    this._grocerylist.addGrocery(this.currentGrocery);
+    this.currentGrocery = "";
+}
+// deleteGrocery = this._grocerylist.deleteGrocery();
   ngOnInit() {
+   
   }
 
 }

@@ -7,11 +7,13 @@ import { GroceryListService } from '../grocery-list.service';
   styleUrls: ['./grocery-list-items.component.css']
 })
 export class GroceryListItemsComponent implements OnInit {
-
-  constructor(private _grocerylist: GroceryListService) { }
-//groceries = this._grocerylist.getItem();
-  ngOnInit() {
-    console.log(this._grocerylist)
+  currentGrocery: string;
+  constructor(public _grocerylist: GroceryListService) {
+  
+ 
+    this.currentGrocery = _grocerylist.currentGrocery
+}
+ ngOnInit() {
+  
   }
-
 }
